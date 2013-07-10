@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 var temphtml = fs.readFileSync('index.html');
 
-var responsehtml = buf.toString(temphtml);
+var responsehtml = temphtml.toString();
 
 
 app.get('/', function(request, response) {
