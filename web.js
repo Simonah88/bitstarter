@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-fs.readFileSync('index.html');
+var temphtml = fs.readFileSync('index.html');
 
 var responsehtml = buf.toString();
 
