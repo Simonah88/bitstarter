@@ -4,14 +4,14 @@ var buffer = require('buffer');
 
 var app = express.createServer(express.logger());
 
-var temphtml = fs.readFileSync('index.html');
 
-var responsehtml = temphtml.toString();
+
+
 
 
 app.get('/', function(request, response) {
 
-response.send(responsehtml);
+response.send(fs.readFileSync("index.html").toString());
 
 });
 
